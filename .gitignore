@@ -26,5 +26,8 @@ dist/
 # data/
 /data
 
+*.csv
 
 plan.md
+
+dvc_storage/files
