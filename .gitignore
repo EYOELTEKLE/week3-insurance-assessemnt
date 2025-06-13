@@ -29,3 +29,5 @@ dist/
 *.csv
 
 plan.md
+
+dvc_storage/files
