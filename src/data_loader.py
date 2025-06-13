@@ -20,7 +20,9 @@ def load_data(filepath, delimiter=None):
         elif ext in ['.txt']:
             # Use provided delimiter or default to '|'
             sep = delimiter if delimiter is not None else '|'
-            return pd.read_csv(filepath, sep=sep)
+            csv = pd.read_csv(filepath, sep=sep)
+            csv.to_csv("../dvc_storage/claims.csv", index=False)
+            return csv
         else:
             print(f"Unsupported file extension: {ext}")
             return None
